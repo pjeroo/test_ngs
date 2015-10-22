@@ -1,3 +1,4 @@
 /app/config/config.php
 /logs/*
+!logs/.gitkeep
 /vendor
