@@ -1,0 +1,9 @@
+<?php
+
+return [
+    'mongo' => [
+        'host' => 'localhost',
+        'credentials' => [], // empty if credentials doesn't exists or
+        // 'credentials' => ['username' => '', 'password' => '']
+    ]
+];

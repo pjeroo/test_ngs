@@ -1,0 +1,24 @@
+.map {
+    width: 100%;
+    height: 97.5vh;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.city-temperature {
+    font-size: 44px;
+}
+
+.city-heat-index {
+    font-size: 12px;
+    line-height: 12px;
+    color: #aeaeae;
+}
+
+.graph-container {
+    min-width: 310px;
+    width: 45%;
+    height: 400px;
+}
