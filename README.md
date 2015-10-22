@@ -5,7 +5,7 @@
 * Удостовериться, что есть права на запись от пользователя веб-сервера на папку /logs
 
 # Конфигурация для Apache
-
+```
 <IfModule mod_rewrite.c>
     Options -MultiViews
 
@@ -14,9 +14,9 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [QSA,L]
 </IfModule>
-
+```
 # Конфигурация для NGINX
-
+```
 server {
     server_name domain.tld www.domain.tld;
     root /var/www/project/web;
@@ -53,3 +53,9 @@ server {
     error_log /var/log/nginx/project_error.log;
     access_log /var/log/nginx/project_access.log;
 }
+```
+
+# Конфигурация для crontab
+```
+0,30 * * * * php (path to project)/app/console.php forecast-insert
+```
